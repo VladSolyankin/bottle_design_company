@@ -37,6 +37,7 @@
     <Folder Include="static\content\" />
     <Folder Include="static\css\" />
     <Folder Include="static\js\" />
+    <Folder Include="static\images\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -54,6 +55,26 @@
     <Content Include="static\css\portfolio.css">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="static\images\about-header.jpg" />
+    <Content Include="static\images\about-img.jpg" />
+    <Content Include="static\images\avatar1.jpg" />
+    <Content Include="static\images\avatar2.jpg" />
+    <Content Include="static\images\avatar3.webp" />
+    <Content Include="static\images\click.png" />
+    <Content Include="static\images\contact-header.jpg" />
+    <Content Include="static\images\fast.png" />
+    <Content Include="static\images\home-bg.jpg" />
+    <Content Include="static\images\logo.png" />
+    <Content Include="static\images\portfolio-header.jpg" />
+    <Content Include="static\images\portfolio-img1.jpg" />
+    <Content Include="static\images\portfolio-img10.jpg" />
+    <Content Include="static\images\portfolio-img2.jpg" />
+    <Content Include="static\images\portfolio-img3.jpg" />
+    <Content Include="static\images\portfolio-img5.jpg" />
+    <Content Include="static\images\portfolio-img6.jpg" />
+    <Content Include="static\images\portfolio-img7.jpg" />
+    <Content Include="static\images\portfolio-img8.jpg" />
+    <Content Include="static\images\portfolio-img9.jpg" />
     <Content Include="static\js\index.js">
       <SubType>Code</SubType>
     </Content>
