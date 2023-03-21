@@ -46,10 +46,6 @@
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
     <Content Include="static\content\site.css" />
-    <Content Include="static\css\about.css">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="static\css\contacts.css" />
     <Content Include="static\css\fonts.css">
       <SubType>Code</SubType>
     </Content>
