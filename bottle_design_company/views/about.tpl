@@ -49,8 +49,45 @@
 				<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, eligendi!</p>
 			</div>
 		</div>
-
-		
+		<div class="main__info">
+			<div class="info__text">
+				<h2 style="font-size: 24px; margin-bottom: 2vh">Onetel Design Studio</h2>
+				<p style="color: darkgray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ducimus eaque eligendi, ex exercitationem facere natus quasi repellendus rerum temporibus.<br>
+				<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore facilis non quaerat quos soluta.
+				</p>
+			</div>
+			<div class="info__progress">
+				<div class="line__container">
+					<div class="container__text">
+						<span>HTML5 & CSS3</span>
+						<span>90%</span>
+					</div>
+					<div class="lines__container">
+						<hr width="90%" color="#009988" size="15">
+						<hr width="10%" size="15" style="background: white">
+					</div>
+				</div>
+				<div class="line__container">
+					<div class="container__text">
+						<span>BOOTSTRAP</span>
+						<span>80%</span>
+					</div>
+					<div class="lines__container">
+						<hr width="80%" color="#c14000" size="15">
+						<hr width="20%" size="15" style="background: white">
+					</div>
+				</div>
+				<div class="line__container">
+					<div class="container__text">
+						<span>UX Design</span>
+						<span>70%</span>
+					</div>
+					<div class="lines__container">
+						<hr width="70%" color="#ffa500" size="15">
+						<hr width="30%" size="15" style="background: white">
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer>
