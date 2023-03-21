@@ -69,6 +69,60 @@ header {
         }
 /* header styles end */
 
+/* main styles start */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3vh;
+    margin-top: 10vh;
+}
+
+textarea {
+    resize: none;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+.main__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.content__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+    .content__inputs > * > * {
+        padding: 5px;
+        background: transparent;
+        border: 2px solid white;
+    }
+
+.content__list {
+    list-style: none;
+    text-align: left;
+}
+
+button {
+    padding: 15px;
+    color: white;
+    background: #191919;
+    border: 2px solid white;
+    margin-top: 1vh;
+}
+
+/* main styles end */
+
 
 
 /* footer styles start */

@@ -23,6 +23,33 @@
 			</ul>
 		</div>
 	</header>
+	<main>
+		<h1>Contact us!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Assumenda cupiditate doloremque fugiat nemo nostrum repellat!</p>
+		<div class="main__content">
+			<div class="content__inputs">
+				<label>
+					<input type="text" placeholder="Name">
+				</label>
+				<label>
+					<input type="text" placeholder="Email">
+				</label>
+			</div>
+			<label>
+				<textarea name="" id="" cols="25" rows="5"></textarea>
+			</label>
+			<ul class="content__list">
+				<li>Email</li>
+				<li>info@company.com</li>
+				<li>Phones</li>
+				<li>010-020-030</li>
+			</ul>
+		</div>
+		<button class="info__button">Send email</button>
+
+	</main>
+
+
 	<footer>
 		Lab #2<br>GUAP
 	</footer>
