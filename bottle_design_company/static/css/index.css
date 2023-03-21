@@ -26,3 +26,45 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
 }
+
+/* header styles start */
+
+.index__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    border-left: 7px solid magenta;
+    z-index: 9999;
+}
+
+.header__menu {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 2vw;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    text-decoration: none;
+    gap: 2vh;
+}
+
+.header__menu-list li {
+padding: 10px;
+}
+
+.header__menu-list li a {
+    text-decoration: none;
+}
+
+
+/* header styles end */
