@@ -87,3 +87,69 @@ footer {
 }
 
 /* footer styles end */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about__hero {
+    background-image: url("../images/portfolio-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.cards__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 5vw;
+}
+
+.main__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 500px;
+    gap: 3vh;
+    border: 2px solid #303030;
+    border-radius: 5%;
+    padding: 20px;
+    transition: all 0.2s ease-in;
+}
+
+    .main__card:hover {
+        border-color: white;
+    }
+
+.card__text {
+    text-align: center;
+}
+
+.card__avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: fill;
+    transition: all 0.1s ease-in;
+    border-radius: 50%;
+}
+
+.card__avatar:hover {
+        transform: scale(1.1);
+        box-shadow: deepskyblue 0 0 5px 5px;
+}
