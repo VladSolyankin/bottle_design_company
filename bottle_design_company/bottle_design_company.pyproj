@@ -49,9 +49,7 @@
     <Content Include="static\css\about.css">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="static\css\contacs.css">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="static\css\contacts.css" />
     <Content Include="static\css\fonts.css">
       <SubType>Code</SubType>
     </Content>
