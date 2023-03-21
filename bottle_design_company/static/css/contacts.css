@@ -124,6 +124,24 @@ button {
 /* main styles end */
 
 
+.contacts__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15vh;
+    gap: 5vh;
+}
+
+.map__iframe {
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+    .map__iframe:hover {
+        box-shadow: deepskyblue 0 0 10px 10px;
+    }
+
 
 /* footer styles start */
 
