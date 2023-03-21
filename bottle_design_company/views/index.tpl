@@ -18,10 +18,10 @@
 
 		<div class="header__menu">
 			<ul class="header__menu-list">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT US</a></li>
-				<li><a href="portfolio.html">PORTFOLIO</a></li>
-				<li><a href="contacts.html">CONTACTS</a></li>
+				<li><a href="/home">HOME</a></li>
+				<li><a href="/about">ABOUT US</a></li>
+				<li><a href="/portfolio">PORTFOLIO</a></li>
+				<li><a href="/contacts">CONTACTS</a></li>
 			</ul>
 		</div>
 	</header>
