@@ -9,4 +9,19 @@
 	<title>Design Company</title>
 </head>
 <body>
+<header class="contacts__header">
+		<a href="index.html">
+			<img src="../static/images/logo.png" alt="Design Company logo" class="header__logo">
+		</a>
+
+		<div class="header__menu">
+			<ul class="header__menu-list">
+				<li><a href="/home">HOME</a></li>
+				<li><a href="/about">ABOUT US</a></li>
+				<li><a href="/portfolio">PORTFOLIO</a></li>
+				<li><a href="/contacts">CONTACTS</a></li>
+			</ul>
+		</div>
+	</header>
+</body>
 </html>
