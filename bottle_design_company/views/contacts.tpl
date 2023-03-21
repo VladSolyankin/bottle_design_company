@@ -23,6 +23,9 @@
 			</ul>
 		</div>
 	</header>
+
+	<div class="contacts__hero"></div>
+
 	<main>
 		<h1>Contact us!</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Assumenda cupiditate doloremque fugiat nemo nostrum repellat!</p>
