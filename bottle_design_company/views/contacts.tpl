@@ -23,5 +23,8 @@
 			</ul>
 		</div>
 	</header>
+	<footer>
+		Lab #2<br>GUAP
+	</footer>
 </body>
 </html>
