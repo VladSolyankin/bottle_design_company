@@ -10,7 +10,6 @@
 	<title>Design Company</title>
 </head>
 <body>
-
 	<header class="index__header">
 		<a href="index.html">
 			<img src="./static/images/logo.png" alt="Design Company logo" class="header__logo">
