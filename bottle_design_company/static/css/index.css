@@ -290,3 +290,58 @@ li {
     }
 
 /* main styles end */
+
+/* contacts styles start */
+
+.contact__information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vw;
+    background: #202020;
+    padding: 10vh;
+}
+
+.contact__information > * {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.contact__information > * > * {
+    list-style: none;
+}
+
+.contact__information > * > ul > li {
+    color: #AAAAAA;
+    margin-bottom: 1vh;
+}
+
+    .contact__information > * > ul > li:hover {
+        color: white;
+        background: transparent;
+        cursor: pointer;
+    }
+
+.information__newsletter > label {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.information__newsletter > * > input {
+    border: 2px solid white;
+    background: #202020;
+    padding: 10px;
+    transition: all 0.3s ease-in;
+}
+
+.information__newsletter > * > input:focus {
+    background: #404040;
+    border: 2px solid white;
+}
+
+/* contacts styles end */
