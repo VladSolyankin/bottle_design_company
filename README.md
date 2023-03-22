@@ -12,15 +12,15 @@
 **HTML, CSS, JavaScript, Bottle (Python)**
 
 
-##Среда запуска
+## Среда запуска
 Visual Studio 2022
 
-##Установка
+## Установка
 Необходимо выполнить клонирование репозитория с GitHub
 https://github.com/VladSolyankin/bottle_design_company.git
 
 
 
-##Разработчики
-Солянкин Владислав
+## Разработчики
+Солянкин Владислав  
 Дмитриев Антон
