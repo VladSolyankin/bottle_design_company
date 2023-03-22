@@ -10,3 +10,17 @@
 
 ## Стек технологий:
 **HTML, CSS, JavaScript, Bottle (Python)**
+
+
+##Среда запуска
+Visual Studio 2022
+
+##Установка
+Необходимо выполнить клонирование репозитория с GitHub
+https://github.com/VladSolyankin/bottle_design_company.git
+
+
+
+##Разработчики
+Солянкин Владислав
+Дмитриев Антон
