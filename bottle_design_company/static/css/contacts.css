@@ -160,6 +160,7 @@ textarea {
     justify-content: center;
     flex-direction: column;
     margin-top: 15vh;
+    margin-bottom: 15vh;
     gap: 5vh;
 }
 
@@ -168,10 +169,10 @@ textarea {
     transition: all 0.3s ease-in;
 }
 
-    .map__iframe:hover {
+    
+.map__iframe:hover {
         box-shadow: deepskyblue 0 0 10px 10px;
-    }
-
+}
 
 /* footer styles start */
 

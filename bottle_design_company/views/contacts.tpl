@@ -53,7 +53,7 @@
 	</main>
 
 	<div class="contacts__map">
-		<p>Location</p>
+		<p class="fs-28">Location</p>
 		<iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.5228205240262!2d30.31402591744385!3d59.873669199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696300a7f677f2d%3A0x19cad73fad8681c8!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LPRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQkNGN0YDQvtC60L7RgdC80LjRh9C10YHQutC-0LPQviDQv9GA0LjQsdC-0YDQvtGB0YLRgNC-0LXQvdC40Y8!5e0!3m2!1sru!2sus!4v1679131107421!5m2!1sru!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 
