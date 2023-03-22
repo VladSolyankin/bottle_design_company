@@ -98,6 +98,15 @@ textarea {
     scroll-behavior: smooth;
 }
 
+.main__title {
+    font-size: 64px;
+}
+
+.main__text {
+    font-size: 20px;
+    color: #999999;
+}
+
 .main__content {
     display: flex;
     align-items: center;
@@ -113,7 +122,7 @@ textarea {
     gap: 2vh;
 }
 
-    .content__inputs > * > * {
+.content__inputs > * > * {
         padding: 5px;
         background: transparent;
         border: 2px solid white;
@@ -124,13 +133,23 @@ textarea {
     text-align: left;
 }
 
-button {
+    .content__list > * {
+        margin-bottom: 1vh;
+    }
+
+.info__button-submit {
     padding: 15px;
     color: white;
     background: #191919;
     border: 2px solid white;
     margin-top: 1vh;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
 }
+
+.info__button-submit:hover {
+        background: #333333;
+    }
 
 /* main styles end */
 

@@ -27,9 +27,9 @@
 	<div class="contacts__hero"></div>
 
 	<main>
-		<h1>Contact us!</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Assumenda cupiditate doloremque fugiat nemo nostrum repellat!</p>
-		<div class="main__content">
+		<h1 class="main__title">Contact us!</h1>
+		<p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Assumenda cupiditate doloremque fugiat nemo nostrum repellat!</p>
+		<form class="main__content">
 			<div class="content__inputs">
 				<label>
 					<input type="text" placeholder="Name">
@@ -43,13 +43,13 @@
 			</label>
 			<ul class="content__list">
 				<li>Email</li>
-				<li>info@company.com</li>
+				<li style="font-size: 14px; color: #888888">info@company.com</li>
 				<li>Phones</li>
-				<li>010-020-030</li>
+				<li style="font-size: 14px; color: #888888">010-020-030</li>
 			</ul>
-		</div>
-		<button class="info__button">Send email</button>
 
+			<button class="info__button-submit" type="submit">Send email</button>
+		</form>
 	</main>
 
 	<div class="contacts__map">
