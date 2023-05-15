@@ -36,6 +36,7 @@
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\css\" />
+    <Folder Include="static\images\articles\" />
     <Folder Include="static\js\" />
     <Folder Include="static\images\" />
     <Folder Include="static\scripts\" />
@@ -43,9 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\articles.txt">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
     <Content Include="static\content\site.css" />
+    <Content Include="static\css\articles.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\css\contacts.css" />
     <Content Include="static\css\fonts.css">
       <SubType>Code</SubType>
@@ -58,6 +65,7 @@
     </Content>
     <Content Include="static\images\about-header.jpg" />
     <Content Include="static\images\about-img.jpg" />
+    <Content Include="static\images\article-header.jpg" />
     <Content Include="static\images\avatar1.jpg" />
     <Content Include="static\images\avatar2.jpg" />
     <Content Include="static\images\avatar3.webp" />
@@ -78,6 +86,7 @@
     <Content Include="static\images\portfolio-img7.jpg" />
     <Content Include="static\images\portfolio-img8.jpg" />
     <Content Include="static\images\portfolio-img9.jpg" />
+    <Content Include="static\images\articles\sushi.jpg" />
     <Content Include="static\js\index.js">
       <SubType>Code</SubType>
     </Content>
@@ -100,6 +109,9 @@
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
+    <Content Include="views\articles.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\portfolio.tpl" />
     <Content Include="views\contacts.tpl" />
     <Content Include="views\index.tpl" />

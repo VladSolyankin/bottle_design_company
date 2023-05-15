@@ -17,11 +17,12 @@
 
 	<div class="header__menu">
 		<ul class="header__menu-list">
-			<li><a href="/home">HOME</a></li>
-			<li><a href="/about">ABOUT US</a></li>
-			<li><a href="/portfolio">PORTFOLIO</a></li>
-			<li><a href="/contacts">CONTACTS</a></li>
-		</ul>
+				<li><a href="/home">HOME</a></li>
+				<li><a href="/about">ABOUT US</a></li>
+				<li><a href="/portfolio">PORTFOLIO</a></li>
+				<li><a href="/contacts">CONTACTS</a></li>
+				<li><a href="/articles">ARTICLES</a></li>
+			</ul>
 	</div>
 </header>
 

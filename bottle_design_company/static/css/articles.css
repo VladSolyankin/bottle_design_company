@@ -1,0 +1,265 @@
+
+@import "fonts.css";
+@import "colors.css";
+@import "font_sizes.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+    background: black;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 2vw;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    text-decoration: none;
+    gap: 2vh;
+}
+
+    .header__menu-list li {
+        padding: 10px;
+    }
+
+        .header__menu-list li a {
+            text-decoration: none;
+        }
+
+.articles__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    border-left: 7px solid magenta;
+    z-index: 9999;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    background-color: #333;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.cards__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 5vw;
+}
+
+.main__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 500px;
+    gap: 3vh;
+    border: 2px solid #303030;
+    border-radius: 5%;
+    padding: 20px;
+    transition: all 0.2s ease-in;
+}
+
+    .main__card:hover {
+        border-color: white;
+    }
+
+.card__text {
+    text-align: center;
+}
+
+.card__avatar {
+    width: 130px;
+    height: 130px;
+    object-fit: fill;
+    transition: all 0.1s ease-in;
+    border-radius: 50%;
+}
+
+    .card__avatar:hover {
+        transform: scale(1.1);
+        box-shadow: deepskyblue 0 0 5px 5px;
+    }
+
+.main__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    gap: 5vw;
+    margin-bottom: 10vh;
+}
+
+.info__text {
+    width: 50%;
+    height: 100%;
+}
+
+.info__progress {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 50%;
+    height: 100%;
+}
+
+.lines__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: all 0.2s ease-in;
+}
+
+    .lines__container:hover {
+        transform: scale(1.1);
+    }
+
+.container__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+    .main__card > * {
+        font-size: calc(100% - 3px)
+    }
+
+    .card__avatar {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.articles__hero {
+    background-image: url("../images/article-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.articles_h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.articles_h2 {
+    font-size: 25px;
+    width: 80%;
+    text-align: center;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    max-height: 2lh;
+}
+
+
+.article_img {
+    height: 50%;
+    width: 70%;
+}
+
+.desc {
+    word-wrap: break-word;
+    width: 400px;
+    height: 7lh;
+    overflow: hidden;
+}
+
+
+.article_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: outset;
+    padding: 10px;
+    width: 550px;
+    height: 520px;
+}
+
+.main_articles_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.initials_div {
+    display: flex;
+    align-self: self-end;
+    flex: 1;
+    align-items: end;
+}
+
+form input {
+    margin-top: 10px;
+    width: 50%;
+
+}
+
+form .desc {
+    height: 100px;
+}
