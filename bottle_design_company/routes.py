@@ -2,8 +2,7 @@
 Routes and views for the bottle application.
 """
 
-import companiesHandler
-from bottle import route, view
+from bottle import route, view, post, request
 from datetime import datetime
 
 @route('/')
@@ -52,3 +51,27 @@ def about():
     return dict(
         error=''
     )
+
+@route('/articles')
+@view('articles')
+def about():
+    """Renders the about page."""
+    return dict(
+        title='About',
+        message='Your application description page.',
+        year=datetime.now().year
+    )
+
+@post("/articles")
+def add_article():
+    name = request.forms.get("name")
+    desc = request.forms.get("desc")
+    image = request.files.get("img")
+    author = request.forms.get("author")
+
+    path = "C:/Users/admin/source/repos/bottle_design_company/bottle_design_company/static/images/articles/" + image.filename
+
+    image.save(path)
+
+    with open("C:/Users/admin/source/repos/bottle_design_company/bottle_design_company/static/articles.txt", "a") as f:
+        f.write(f"\n{name}~../static/images/articles/{image.filename}~{desc}~{author}~{datetime.now().year}");
