@@ -2,6 +2,7 @@
 Routes and views for the bottle application.
 """
 
+import companiesHandler
 from bottle import route, view
 from datetime import datetime
 
@@ -42,4 +43,12 @@ def about():
         title='About',
         message='Your application description page.',
         year=datetime.now().year
+    )
+
+@route('/companies')
+@view('companies')
+def about():
+    """Renders the about page."""
+    return dict(
+        error=''
     )
