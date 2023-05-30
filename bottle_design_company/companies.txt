@@ -1,2 +1,4 @@
 ./static/companyImages/empty:123:123:8-994-420-73-54
 ./static/companyImages/picture1.jpg:Mastercard:Very large company:8-994-420-73-54
+./static/companyImages/empty:123:123:8-911-420-73-54
+./static/companyImages/empty:123:123:8-994-420-31-12
