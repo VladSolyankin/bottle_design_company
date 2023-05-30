@@ -25,19 +25,6 @@
 	</header>
 
 	<main class="companies__container">
-		<div class="companies__container-images">
-			%with open('C:/Users/79117/source/repos/bottle_design_company/bottle_design_company/companies.txt') as f:
-			%	lines = f.readlines()
-			%for i in lines:
-			%	currentCompany = i.split(":")
-				<div class="container__card-company">
-					<img src="{{currentCompany[0]}}" class="container__img">
-					<p>{{currentCompany[1]}}</p>
-					<p>{{currentCompany[2]}}</p>
-					<p>{{currentCompany[3]}}<p>
-				</div> 
-			%end
-		</div>
 		<form class="addNewCompany__form" enctype="multipart/form-data" method="post">
 			<p>Add new company:</p>
 			<label>
@@ -54,6 +41,19 @@
 			<button type="submit" class="form__button-submit">Add new company</button>
 			<p>{{error}}</p>
 		</form>
+		<div class="companies__container-images">
+			%with open('./companies.txt') as f:
+			%	lines = f.readlines()
+			%for i in lines:
+			%	currentCompany = i.split(":")
+				<div class="container__card-company">
+					<img src="{{currentCompany[0]}}" class="container__img">
+					<p>{{currentCompany[1]}}</p>
+					<p>{{currentCompany[2]}}</p>
+					<p>{{currentCompany[3]}}<p>
+				</div> 
+			%end
+		</div>
 	</main>
 
 </body>

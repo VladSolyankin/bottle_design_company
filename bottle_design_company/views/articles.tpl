@@ -38,7 +38,7 @@
 				<p style="margin-left: 15px;">16.01.1980</p>
 			</div>
 		</div>
-		%with open("C:/Users/admin/source/repos/bottle_design_company/bottle_design_company/static/articles.txt") as f:
+		%with open("./static/articles.txt") as f:
 		%for line in f:
 		<div class="article_div">
 			<img src= {{line.split("~")[1]}} class="article_img"/>
