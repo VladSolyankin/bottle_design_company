@@ -27,7 +27,34 @@
 </header>
 <div class="articles__hero"></div>
 <main>
-	<h1 class = "articles_h1">Articles</h1>
+	<div style="flex-direction: row; display: flex">
+		<h1 class = "articles_h1">Articles</h1>
+		<label class="buttonclassic" style="position: absolute; right: 40px; align-self: center;" for = "add">Add an a article</label>
+		
+	</div>
+	<input type="checkbox" id="add" name = "add" style="display: none"/>
+	
+
+	<div class = "addarticlediv">
+		<p style="font-size: 40px; text-align: center">Add an article!</p>
+		<form style="display: flex; flex-direction: column; align-items: center; width: 500px" action="/articles" method="post" enctype="multipart/form-data">
+			<input type="text" name="name" placeholder="Article name"/>
+			<textarea type="text" name="desc" placeholder="Description"></textarea>
+			<div style="display: flex; flex-direction: row;">
+				<label for = "loadimage" class = "buttonclassic">Select image for an article</label>
+				<input id = "loadimage" style="margin-left: 5px; width: 100%; color: white; display: none" name="img" type="file"/>
+				
+			</div>
+			<input type="text" name="src-link" placeholder="Source link"/>
+			<input type="text" name="author" placeholder="Author"/>
+			<button type = "submit" class = "buttonclassic">Add</button>
+			
+		</form>
+	</div>
+	<p class=error>{{error}}</p>
+
+
+
 	<div class="main_articles_div">
 		<div class="article_div">
 			<img src="../static/images/about-img.jpg" class="article_img"/>
@@ -43,12 +70,12 @@
 		%for line in f:
 		<div class="article_div">
 			<img src= {{line.split("~")[1]}} class="article_img"/>
-			<h2 class="articles_h2">{{line.split("~")[0]}}</h2>
+			<a class="articles_h2" href="{{line.split("~")[3]}}">{{line.split("~")[0]}}</a>
 			<hr color="white" width="200px">
 			<p class="desc">{{line.split("~")[2]}}</p>
 			<div class="initials_div">
-				<p>{{line.split("~")[3]}}</p>
-				<p style="margin-left: 15px;">{{line.split("~")[4]}}</p>
+				<p>{{line.split("~")[4]}}</p>
+				<p style="margin-left: 15px;">{{line.split("~")[5]}}</p>
 			</div>
 		</div>
 		%end
@@ -58,21 +85,7 @@
 	
 	
 
-	<div style="margin-top: 50px; flex-direction: column;">
-		<p style="font-size: 40px;">Add a article!</p>
-		<form style="display: flex; flex-direction: column;" action="/articles" method="post" enctype="multipart/form-data">
-			<input type="text" name="name" placeholder="Article name"/>
-			<input type="text" name="desc" placeholder="Description"/>
-			<div style="display: flex; flex-direction: row;">
-				<p style="align-self: center;">Image</p>
-				
-			</div>
-			<input style="margin-left: 5px;" name="img" type="file"/>
-			<input type="text" name="author" placeholder="Author"/>
-			<button type = "submit">Add</button>
-			
-		</form>
-	</div>
+	
 	
 </main>
 

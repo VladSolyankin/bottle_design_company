@@ -196,9 +196,9 @@ footer {
 }
 
 .articles_h1 {
-    font-size: 40px;
     margin-top: 20px;
     margin-bottom: 25px;
+    font-size: 40px;
 }
 
 .articles_h2 {
@@ -260,6 +260,48 @@ form input {
 
 }
 
+form textarea {
+    margin-top: 10px;
+    width: 50%;
+    max-width: 70%;
+    max-height: 10lh;
+    color: black;
+}
+
 form .desc {
     height: 100px;
+}
+
+input{
+    color: black;
+}
+
+.buttonclassic{
+    padding: 15px;
+    color: white;
+    background: #191919;
+    border: 2px solid white;
+    margin-top: 1vh;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.buttonclassic:hover {
+        background: #333333;
+}
+    
+
+#add:checked ~ div{
+    display: flex;
+}
+
+.addarticlediv {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    display: none;
+}
+
+.error{
+    margin-bottom: 10px;
+    font-size: 18px;
 }
