@@ -163,11 +163,11 @@ textarea {
     gap: 2vh;
 }
 
-    .content__inputs > * > * {
-        padding: 5px;
-        background: transparent;
-        border: 2px solid white;
-    }
+.content__inputs > * > * {
+    padding: 5px;
+    background: transparent;
+    border: 2px solid white;
+}
 
 .content__list {
     list-style: none;
@@ -239,5 +239,5 @@ textarea {
     background: #191919;
     color: white;
 
-    width: 270px;
+    width: 300px;
 }
