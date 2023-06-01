@@ -1,5 +1,1 @@
-Статья~../static/images/about-img.jpg~Описание статьи~Автор~Дата
-Статья~../static/images/articles/sushi.jpg~Описание статьи~Автор~Дата
-Статья~../static/images/articles/sushi.jpg~Описание статьи~Автор~Дата
-asdf~../static/images/articles/3.png~asdf~sdafs~2023
-ТЕКСТ~../static/images/articles/2ba15186578206597b5ea197afb962f5.jpg~asdf~sdafaasdfыфва~2023
+bro~../static/images/articles/4.png~br0~www.google.com~bro~2023.5.31
