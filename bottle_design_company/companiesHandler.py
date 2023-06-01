@@ -24,4 +24,24 @@ def companiesHandler():
         f.write(f"\n./static/companyImages/{companyImage.filename}:{companyTitle}:{companyDescription}:{companyPhone}")
 
     # Returns updated template
-    return template('companies.tpl', error='')
+    return template('companies.tpl', error='')  
+
+
+
+def testFormTitle():
+    # Receiving form data
+    companyTitle = request.forms.get("TITLE")
+
+    if len(companyTitle) < 2 or not companyTitle[0].isupper():
+         return False
+
+    return True
+   
+
+def testFormDescription():
+    companyDescription = request.forms.get("DESCRIPTION")
+
+    if len(companyDescription) < 10:
+        return False
+
+    return True

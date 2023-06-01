@@ -19,6 +19,9 @@
     <Name>bottle_design_company</Name>
     <RootNamespace>bottle_design_company</RootNamespace>
     <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>./static/unit_test</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +37,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
+    <Compile Include="static\unit_test\companiesTests\test_newCompanyForm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="static\unit_test\companiesTests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="static\unit_test\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="static\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\companyImages\" />
@@ -43,7 +58,9 @@
     <Folder Include="static\images\articles\" />
     <Folder Include="static\js\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\unit_test\" />
     <Folder Include="static\scripts\" />
+    <Folder Include="static\unit_test\companiesTests\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
