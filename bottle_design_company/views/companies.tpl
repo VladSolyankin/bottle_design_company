@@ -26,7 +26,8 @@
 	</header>
 
 	<main class="companies__container">
-		<form class="addNewCompany__form" enctype="multipart/form-data" method="post">
+		<button class="form__button-submit" id="newCompanyButton">Add new company</button>
+		<form class="addNewCompany__form" enctype="multipart/form-data" method="post" id="newCompanyForm">
 			<p>Add new company:</p>
 			<label>
 				<input type="text" placeholder="Enter company name" name="TITLE" class="form__input" required>
@@ -39,9 +40,9 @@
 			</label>
 			<input type="file" id="imagePicker" class="form__imagePicker form__input" name="IMAGE">
 			<img src="" alt="some text" class="hide form__image-company" id="companyImage">
-			<button type="submit" class="form__button-submit">Add new company</button>
-			<p class="error">{{error}}</p>
+			<button type="submit" class="form__button-submit" id="formButton">Add new company</button>
 		</form>
+		<p class="error">{{error}}</p>
 		<div class="companies__container-images">
 			%with open('./companies.txt') as f:
 			%	lines = f.readlines()
@@ -49,14 +50,14 @@
 			%	currentCompany = i.split(":")
 				<div class="container__card-company">
 					<img src="{{currentCompany[0]}}" class="container__img">
-					<p>{{currentCompany[1]}}</p>
+					<p class="title__text">{{currentCompany[1]}}</p>
 					<p>{{currentCompany[2]}}</p>
-					<p>{{currentCompany[3]}}<p>
+					<p class="phone__text">{{currentCompany[3]}}<p>
 				</div> 
 			%end
 		</div>
 	</main>
 
 </body>
-<script src="../static/js/companies.js"></script>
+<script src="../static/js/addNewCompany.js"></script>
 </html>

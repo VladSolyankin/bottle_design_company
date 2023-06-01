@@ -21,7 +21,7 @@
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>./static/unit_test</UnitTestRootDirectory>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env6|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -117,12 +117,7 @@
     <Content Include="static\images\portfolio-img7.jpg" />
     <Content Include="static\images\portfolio-img8.jpg" />
     <Content Include="static\images\portfolio-img9.jpg" />
-    <Content Include="static\js\index.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="static\js\mail.js">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="static\js\addNewCompany.js" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
@@ -146,6 +141,15 @@
     <Content Include="views\index.tpl" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env6\">
+      <Id>env6</Id>
+      <Version>3.9</Version>
+      <Description>env6 (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>3.9</Version>
