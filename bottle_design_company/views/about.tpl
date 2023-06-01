@@ -20,8 +20,8 @@
 				<li><a href="/about">ABOUT US</a></li>
 				<li><a href="/portfolio">PORTFOLIO</a></li>
 				<li><a href="/contacts">CONTACTS</a></li>
+				<li><a href="/articles">ARTICLES</a></li>	
 				<li><a href="/companies">COMPANIES</a></li>
-				<li><a href="/articles">ARTICLES</a></li>
 			</ul>
 		</div>
 	</header>

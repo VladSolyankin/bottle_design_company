@@ -29,18 +29,18 @@
 		<form class="addNewCompany__form" enctype="multipart/form-data" method="post">
 			<p>Add new company:</p>
 			<label>
-				<input type="text" placeholder="Enter company name: " name="TITLE" class="form__input">
+				<input type="text" placeholder="Enter company name" name="TITLE" class="form__input" required>
 			</label>
 			<label>
-				<textarea placeholder="Enter company description: " name="DESCRIPTION" class="form__input"></textarea>
+				<textarea placeholder="Enter company description" name="DESCRIPTION" class="form__input" required></textarea>
 			</label>
 			<label>
-				<input type="tel" placeholder="Phone number (8-xxx-xxx-xx-xx): " name="PHONE" class="form__input" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+				<input type="tel" placeholder="Phone number 8-xxx-xxx-xx-xx" name="PHONE" class="form__input" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
 			</label>
 			<input type="file" id="imagePicker" class="form__imagePicker form__input" name="IMAGE">
 			<img src="" alt="some text" class="hide form__image-company" id="companyImage">
 			<button type="submit" class="form__button-submit">Add new company</button>
-			<p>{{error}}</p>
+			<p class="error">{{error}}</p>
 		</form>
 		<div class="companies__container-images">
 			%with open('./companies.txt') as f:
