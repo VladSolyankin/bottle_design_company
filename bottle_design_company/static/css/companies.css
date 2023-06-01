@@ -118,7 +118,7 @@ h1 {
     flex-direction: column;
 
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     margin-bottom: 5vh;
     padding: 15px;
     gap: 1vh;
@@ -127,6 +127,7 @@ h1 {
     border-radius: 5px;
 
     transition: 0.3s all ease-in;
+    word-wrap: anywhere;
 }
 
 .container__card-company:hover {
@@ -240,4 +241,8 @@ textarea {
     color: white;
 
     width: 300px;
+}
+
+.error {
+    color: red;
 }
