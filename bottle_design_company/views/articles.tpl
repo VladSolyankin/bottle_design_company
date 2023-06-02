@@ -42,7 +42,7 @@
 			<textarea type="text" name="desc" placeholder="Description"></textarea>
 			<div style="display: flex; flex-direction: row;">
 				<label for = "loadimage" class = "buttonclassic">Select image for an article</label>
-				<input id = "loadimage" style="margin-left: 5px; width: 100%; color: white; display: none" name="img" type="file"/>
+				<input id = "loadimage" style="margin-left: 5px; width: 100%; color: white; display: none" accept="image/png, image/jpeg" name="img" type="file"/>
 				
 			</div>
 			<input type="text" name="src-link" placeholder="Source link"/>

@@ -54,3 +54,6 @@ def add_article():
 def validate_url(url):
     formaturl = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
     return bool(re.fullmatch(re.compile(formaturl), url))
+
+def validate_img(filename):
+    pass
