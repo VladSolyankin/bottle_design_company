@@ -1,3 +1,4 @@
 ./static/companyImages/mastercard.png:Mastercard:A very large cardholding company:8-994-420-73-54
 ./static/companyImages/sber.png:Sber:The biggest Russian bank:8-994-420-73-54
 ./static/companyImages/volkswagen.jfif:Volkswagen:Famous car manufacturer:8-911-420-73-54
+./static/companyImages/energy.png:NewCompany:NewCompany description:8-911-420-73-54

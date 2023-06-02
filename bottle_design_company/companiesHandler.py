@@ -13,11 +13,26 @@ def companiesHandler():
     companyDescription = request.forms.get("DESCRIPTION")
     companyPhone = request.forms.get("PHONE")
     companyImage = request.files.get("IMAGE")
+    titleRegex = re.compile(r'[A-Za-z]+')
+    descriptionRegex = re.compile(r'([A-Za-z]+\s)([0-9!@#$%^&*()]*)')
+    phoneRegex = re.compile(r'8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}')
 
     # Checking for filling all input fields
     if not len(companyTitle) or not len(companyDescription) or not len(companyPhone):
         return template('companies.tpl', error='Fill all the fields!')
     
+    # Title validation
+    if not re.fullmatch(titleRegex, companyTitle) or len(companyTitle) < 2:
+        return template('companies.tpl', error='Wrong company name or it\'s too short!')
+
+    # Description validation
+    if not re.match(descriptionRegex, companyDescription) or len(companyTitle) < 10:
+        return template('companies.tpl', error='Wrong company description or it\'s too short!')
+
+    # Phone validation
+    if not re.fullmatch(phoneRegex, companyPhone):
+        return template('companies.tpl', error='Wrong company phone!')
+
     # Saving loaded images in folder
     start_path = f"./static/companyImages/{companyImage.filename}"
     if not os.path.exists(start_path):
@@ -28,7 +43,7 @@ def companiesHandler():
 
     # Writing data about new company in text file
     with open('companies.txt', 'a') as f:
-        f.write(f"\n./static/companyImages/{companyImage.filename}:{companyTitle}:{companyDescription}:{companyPhone}")
+        f.write(f"./static/companyImages/{companyImage.filename}:{companyTitle}:{companyDescription}:{companyPhone}\n")
 
     # Returns updated template
     return template('companies.tpl', error='')  

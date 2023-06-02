@@ -33,13 +33,13 @@
 		<form class="addNewCompany__form" enctype="multipart/form-data" method="post" id="newCompanyForm">
 			<p>Fill new company information:</p>
 			<label>
-				<input type="text" placeholder="Enter company name" name="TITLE" class="form__input">
+				<input type="text" placeholder="Enter company name (2+)" name="TITLE" class="form__input">
 			</label>
 			<label>
-				<textarea placeholder="Enter company description" name="DESCRIPTION" class="form__input"></textarea>
+				<textarea placeholder="Enter company description (10+)" name="DESCRIPTION" class="form__input"></textarea>
 			</label>
 			<label>
-				<input type="tel" placeholder="Phone number 8-xxx-xxx-xx-xx" name="PHONE" class="form__input" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+				<input type="tel" placeholder="Phone number 8-xxx-xxx-xx-xx" name="PHONE" class="form__input">
 			</label>
 			<input type="file" id="imagePicker" class="form__imagePicker form__input" name="IMAGE">
 			<img src="" alt="some text" class="hide form__image-company" id="companyImage">
