@@ -18,10 +18,8 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>bottle_design_company</Name>
     <RootNamespace>bottle_design_company</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <TestFramework>unittest</TestFramework>
-    <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>./unittests</UnitTestRootDirectory>
-    <InterpreterId>MSBuild|env6|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,25 +31,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="articlesHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="companiesHandler.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
-    <Compile Include="static\__init__.py">
+    <Compile Include="unit_tests\articles\test_URL.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="unittests\test_addNewCompany_data1.py">
+    <Compile Include="unit_tests\articles\test1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="unittests\test_addNewCompany_data2.py">
+    <Compile Include="unit_tests\articles\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="unittests\__init__.py">
+    <Compile Include="unit_tests\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="unittests\" />
+    <Folder Include="unit_tests\" />
     <Folder Include="static\companyImages\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
@@ -60,6 +61,7 @@
     <Folder Include="static\js\" />
     <Folder Include="static\images\" />
     <Folder Include="static\scripts\" />
+    <Folder Include="unit_tests\articles\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
