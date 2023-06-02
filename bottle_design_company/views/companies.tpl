@@ -25,18 +25,21 @@
 		</div>
 	</header>
 
+	<div class="companies__hero"></div>
+
 	<main class="companies__container">
+		<h1>Our company partners</h1>
 		<button class="form__button-submit" id="newCompanyButton">Add new company</button>
 		<form class="addNewCompany__form" enctype="multipart/form-data" method="post" id="newCompanyForm">
-			<p>Add new company:</p>
+			<p>Fill new company information:</p>
 			<label>
-				<input type="text" placeholder="Enter company name" name="TITLE" class="form__input" required>
+				<input type="text" placeholder="Enter company name" name="TITLE" class="form__input">
 			</label>
 			<label>
-				<textarea placeholder="Enter company description" name="DESCRIPTION" class="form__input" required></textarea>
+				<textarea placeholder="Enter company description" name="DESCRIPTION" class="form__input"></textarea>
 			</label>
 			<label>
-				<input type="tel" placeholder="Phone number 8-xxx-xxx-xx-xx" name="PHONE" class="form__input" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+				<input type="tel" placeholder="Phone number 8-xxx-xxx-xx-xx" name="PHONE" class="form__input" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
 			</label>
 			<input type="file" id="imagePicker" class="form__imagePicker form__input" name="IMAGE">
 			<img src="" alt="some text" class="hide form__image-company" id="companyImage">
