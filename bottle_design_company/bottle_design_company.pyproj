@@ -20,7 +20,7 @@
     <RootNamespace>bottle_design_company</RootNamespace>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>./static/unit_test</UnitTestRootDirectory>
+    <UnitTestRootDirectory>./unittests</UnitTestRootDirectory>
     <InterpreterId>MSBuild|env6|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -37,16 +37,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
-    <Compile Include="static\unit_test\companiesTests\test_newCompanyForm.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="static\unit_test\companiesTests\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="static\unit_test\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="static\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unittests\test_addNewCompany_data1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unittests\test_addNewCompany_data2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unittests\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -59,9 +59,7 @@
     <Folder Include="static\images\articles\" />
     <Folder Include="static\js\" />
     <Folder Include="static\images\" />
-    <Folder Include="static\unit_test\" />
     <Folder Include="static\scripts\" />
-    <Folder Include="static\unit_test\companiesTests\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
