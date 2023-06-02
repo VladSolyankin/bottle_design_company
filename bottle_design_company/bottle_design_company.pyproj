@@ -47,6 +47,11 @@
     <Compile Include="unit_tests\articles\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="unit_tests\companies\test_addNewCompany_data1.py" />
+    <Compile Include="unit_tests\companies\test_addNewCompany_data2.py" />
+    <Compile Include="unit_tests\companies\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="unit_tests\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -62,6 +67,7 @@
     <Folder Include="static\images\" />
     <Folder Include="static\scripts\" />
     <Folder Include="unit_tests\articles\" />
+    <Folder Include="unit_tests\companies\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
