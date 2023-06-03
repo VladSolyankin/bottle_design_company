@@ -305,3 +305,55 @@ input{
     margin-bottom: 10px;
     font-size: 18px;
 }
+
+.show_add_articles {
+    position: absolute;
+    right: 40px;
+    align-self: center;
+}
+.flex-row {
+    flex-direction: row;
+    display: flex
+}
+.flex-column {
+    flex-direction: column;
+    display: flex
+}
+
+.add_form {
+    align-items: center;
+    width: 800px
+}
+
+#loadimage {
+    margin-left: 5px;
+    width: 100%;
+    color: white;
+    display: none
+}
+
+p.add {
+    font-size: 40px;
+    text-align: center
+}
+
+a.article:link {
+    text-decoration: none;
+}
+
+
+a.article:visited {
+    text-decoration: none;
+}
+
+
+a.article:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #A020F0;
+}
+
+
+a.article:active {
+    text-decoration: none;
+}
+

@@ -43,7 +43,7 @@
     <Compile Include="unit_tests\articles\test_URL.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="unit_tests\articles\test_imagepath.py">
+    <Compile Include="unit_tests\articles\test_simplefields.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unit_tests\articles\__init__.py">
